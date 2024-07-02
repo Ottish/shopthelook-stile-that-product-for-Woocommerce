@@ -6,7 +6,6 @@ Version: 1.0.1
 Author: SHOPTHELOOK SRL
 */
 
-
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
