@@ -2,7 +2,7 @@
 /*
 Plugin Name: ShopTheLook - Style It for WooCommerce
 Description:  Shop The Look Stile it is a plugin to create and manage product looks for WooCommerce.
-Version: 1.0.0
+Version: 1.0.1
 Author: SHOPTHELOOK SRL
 */
 if (!defined('ABSPATH')) {
