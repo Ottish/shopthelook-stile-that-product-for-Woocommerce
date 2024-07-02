@@ -5,6 +5,7 @@ class Shop_The_Look_Style_It {
         add_action('init', array($this, 'register_post_type'));
         add_action('add_meta_boxes', array($this, 'add_meta_boxes'));
         add_action('save_post', array($this, 'save_meta_boxes'));
+        add_action('admin_menu', array($this, 'add_admin_menu'));
     }
 
     public function register_post_type() {
@@ -49,6 +50,28 @@ class Shop_The_Look_Style_It {
         } else {
             delete_post_meta($post_id, '_look_products');
         }
+    }
+
+    public function add_admin_menu() {
+        add_menu_page(
+            __('Shop The Look - Style It', 'textdomain'),
+            __('Looks', 'textdomain'),
+            'manage_options',
+            'shop-the-look-style-it',
+            array($this, 'admin_page'),
+            'dashicons-admin-customizer',
+            20
+        );
+    }
+
+    public function admin_page() {
+        ?>
+        <div class="wrap">
+            <h1><?php _e('Manage Looks', 'textdomain'); ?></h1>
+            <p><?php _e('Here you can manage your product looks.', 'textdomain'); ?></p>
+            <a href="<?php echo admin_url('edit.php?post_type=look'); ?>" class="button button-primary"><?php _e('Go to Looks', 'textdomain'); ?></a>
+        </div>
+        <?php
     }
 }
 
