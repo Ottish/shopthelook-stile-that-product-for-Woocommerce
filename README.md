@@ -1,6 +1,8 @@
 # shopthelook stile it for Woocommerce 
 Copyright (C) SHOPTHELOOK SRL. All rights reserved.
 Shopthelook or SHOPTHELOOK are trademarks registred. Shopthelook SRL owns and oversees the SHOPTHELOOK trademark and a family of Shopthelook marks.
+Intellectual Property. No trademark licenses are granted under this Agreement, and in  connection with the Shopthelook materials
+
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
 License at http://www.apache.org/licenses/LICENSE-2.0
